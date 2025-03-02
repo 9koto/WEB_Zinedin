@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Облік часу - Time Tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .timer-display {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">...</nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-4">Облік робочого часу</h1>
+
+        <div class="card w-75 mx-auto mb-4">
+            <div class="card-body text-center">
+                <h5 class="card-title">Нове завдання</h5>
+                <input type="text" class="form-control mb-3" placeholder="Назва завдання">
+                <div class="timer-display mb-3">00:00:00</div>
+                <div class="btn-group">
+                    <button class="btn btn-success">Запуск</button>
+                    <button class="btn btn-warning">Пауза</button>
+                    <button class="btn btn-danger">Зупинка</button>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-center mb-3">Історія</h3>
+        <table class="table table-striped w-75 mx-auto">
+            <thead>
+                <tr>
+                    <th>Назва</th>
+                    <th>Час початку</th>
+                    <th>Час завершення</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Робота над проєктом</td>
+                    <td>10:00</td>
+                    <td>11:30</td>
+                </tr>
+                <tr>
+                    <td>Навчання</td>
+                    <td>14:00</td>
+                    <td>15:15</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">...</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
